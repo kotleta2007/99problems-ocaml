@@ -1,15 +1,37 @@
-let solutions_dir = String.cat (Sys.getcwd()) "/solutions/";;
-let pat = Str.regexp {|prob\([0-9]+\).ml|};;
-let filename2link s = String.concat "" ["[☑](https://github.com/kotleta2007/99problems-ocaml/blob/main/solutions/"; s; ")"];;
-let to_tuple s = (Stdlib.int_of_string (Str.replace_first pat {|\1|} s), filename2link(s));;
+(* DONE *)
 
-let res = Sys.readdir (solutions_dir)
+let solutions_dir_done = String.cat (Sys.getcwd()) "/solutions/done";;
+let pat = Str.regexp {|prob\([0-9]+\).ml|};;
+let filename2link_done s = String.concat "" ["[☑](https://github.com/kotleta2007/99problems-ocaml/blob/main/solutions/done/"; s; ")"];;
+let to_tuple_done s = (Stdlib.int_of_string (Str.replace_first pat {|\1|} s), filename2link_done(s));;
+
+let done_ = Sys.readdir (solutions_dir_done)
 |> Array.to_list
 |> List.filter (fun x -> Filename.extension x = ".ml")
 |> List.filter (fun x -> String.starts_with ~prefix:"prob" x)
-|> List.map to_tuple
-|> List.sort (fun x y -> compare (fst x) (fst y))
+|> List.map to_tuple_done;;
+
+(* PENDING *)
+
+let solutions_dir_pending = String.cat (Sys.getcwd()) "/solutions/pending";;
+let filename2link_pending s = String.concat "" ["[☒](https://github.com/kotleta2007/99problems-ocaml/blob/main/solutions/pending/"; s; ")"];;
+let to_tuple_pending s = (Stdlib.int_of_string (Str.replace_first pat {|\1|} s), filename2link_pending(s));;
+
+let pending = Sys.readdir (solutions_dir_pending)
+|> Array.to_list
+|> List.filter (fun x -> Filename.extension x = ".ml")
+|> List.filter (fun x -> String.starts_with ~prefix:"prob" x)
+|> List.map to_tuple_pending;;
+
+(* SPECIAL *)
+
+let special = []
 |> List.cons (0, "☺");;
+
+(* RES *)
+
+let res = done_ @ pending @ special
+|> List.sort (fun x y -> compare (fst x) (fst y));;
 
 Printf.printf "Table entries: \n";;
 List.iter (fun x -> Printf.printf "%d, %s\n" (fst x) (snd x)) res;;
