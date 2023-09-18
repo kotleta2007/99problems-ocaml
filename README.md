@@ -7,11 +7,11 @@
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|---|
 | 00 | ☺ | [☑](https://github.com/kotleta2007/99problems-ocaml/blob/main/solutions/done/prob1.ml) | [☑](https://github.com/kotleta2007/99problems-ocaml/blob/main/solutions/done/prob2.ml) | [☑](https://github.com/kotleta2007/99problems-ocaml/blob/main/solutions/done/prob3.ml) | [☒](https://github.com/kotleta2007/99problems-ocaml/blob/main/solutions/pending/prob4.ml) | [☒](https://github.com/kotleta2007/99problems-ocaml/blob/main/solutions/pending/prob5.ml) |  | [☒](https://github.com/kotleta2007/99problems-ocaml/blob/main/solutions/pending/prob7.ml) | [☒](https://github.com/kotleta2007/99problems-ocaml/blob/main/solutions/pending/prob8.ml) |  |
 | 10 |  |  |  |  | [☑](https://github.com/kotleta2007/99problems-ocaml/blob/main/solutions/done/prob14.ml) | [☑](https://github.com/kotleta2007/99problems-ocaml/blob/main/solutions/done/prob15.ml) |  |  |  |  |
-| 20 |  |  |  |  |  |  |  |  |  |  |
-| 30 |  |  |  |  |  |  |  |  |  |  |
-| 40 |  |  |  |  |  |  |  |  |  |  |
-| 50 |  |  |  |  |  |  |  |  |  |  |
+| 20 |  |  |  |  |  |  |  |  |  | ☺ |
+| 30 | ☺ |  |  |  |  |  |  |  |  |  |
+| 40 |  |  | ☺ | ☺ | ☺ | ☺ |  |  |  |  |
+| 50 |  | ☺ | ☺ | ☺ | ☺ |  |  |  |  |  |
 | 60 |  |  |  |  |  |  |  |  |  |  |
-| 70 |  |  |  |  |  |  |  |  |  |  |
+| 70 |  |  |  |  | ☺ | ☺ | ☺ | ☺ | ☺ | ☺ |
 | 80 |  |  |  |  |  |  |  |  |  |  |
 | 90 |  |  |  |  |  |  |  |  |  |  |

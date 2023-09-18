@@ -26,7 +26,23 @@ let pending = Sys.readdir (solutions_dir_pending)
 (* SPECIAL *)
 
 let special = []
-|> List.cons (0, "☺");;
+|> List.cons (0, "☺")
+|> List.cons (29, "☺")
+|> List.cons (30, "☺")
+|> List.cons (42, "☺")
+|> List.cons (43, "☺")
+|> List.cons (44, "☺")
+|> List.cons (45, "☺")
+|> List.cons (51, "☺")
+|> List.cons (52, "☺")
+|> List.cons (53, "☺")
+|> List.cons (54, "☺")
+|> List.cons (74, "☺")
+|> List.cons (75, "☺")
+|> List.cons (76, "☺")
+|> List.cons (77, "☺")
+|> List.cons (78, "☺")
+|> List.cons (79, "☺");;
 
 (* RES *)
 
