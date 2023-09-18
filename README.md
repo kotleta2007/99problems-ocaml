@@ -6,7 +6,7 @@
 |  | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|---|
 | 00 | ☺ | [☑](https://github.com/kotleta2007/99problems-ocaml/blob/main/solutions/prob1.ml) | [☑](https://github.com/kotleta2007/99problems-ocaml/blob/main/solutions/prob2.ml) | [☑](https://github.com/kotleta2007/99problems-ocaml/blob/main/solutions/prob3.ml) |  |  |  |  |  |  |
-| 10 |  |  |  |  |  |  |  |  |  |  |
+| 10 |  |  |  |  | [☑](https://github.com/kotleta2007/99problems-ocaml/blob/main/solutions/prob14.ml) |  |  |  |  |  |
 | 20 |  |  |  |  |  |  |  |  |  |  |
 | 30 |  |  |  |  |  |  |  |  |  |  |
 | 40 |  |  |  |  |  |  |  |  |  |  |
