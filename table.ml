@@ -75,4 +75,5 @@ let () =
 	done;
 	close_out oc;;
 
+Printf.printf "\n%d / 99 problems remaining!\n" (99 - (List.length res));;
 Printf.printf "\n☺\n";;
