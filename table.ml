@@ -1,7 +1,8 @@
+let pat = Str.regexp {|prob\([0-9]+\).ml|};;
+
 (* DONE *)
 
 let solutions_dir_done = String.cat (Sys.getcwd()) "/solutions/done";;
-let pat = Str.regexp {|prob\([0-9]+\).ml|};;
 let filename2link_done s = String.concat "" ["[☑](https://github.com/kotleta2007/99problems-ocaml/blob/main/solutions/done/"; s; ")"];;
 let to_tuple_done s = (Stdlib.int_of_string (Str.replace_first pat {|\1|} s), filename2link_done(s));;
 
@@ -51,6 +52,8 @@ let res = done_ @ pending @ special
 
 Printf.printf "Table entries: \n";;
 List.iter (fun x -> Printf.printf "%d, %s\n" (fst x) (snd x)) res;;
+
+(* PRINTING TO FILE *)
 
 let tableEntry i j = 
 	try (snd (List.find (fun x -> (fst x) = (10*i + j)) res)) with
