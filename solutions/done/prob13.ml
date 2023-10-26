@@ -10,7 +10,7 @@ let rec encode_buf l n x =
 		then encode_buf t (n + 1) x
 		else (n, x) :: (encode_buf t 1 h);;
 
-let encode_as_lists l =
+let encode_as_pairs l =
 	match l with
 	| [] -> []
 	| h :: t -> encode_buf t 1 h;;
@@ -20,7 +20,7 @@ let encode l =
 		match x with
 		| (1, elem) -> One elem
 		| (n, elem) -> Many (n, elem)) 
-	(encode_as_lists l);;
+	(encode_as_pairs l);;
 
 (* TEST CASES:
 
