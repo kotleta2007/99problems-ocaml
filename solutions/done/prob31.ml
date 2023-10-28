@@ -3,8 +3,8 @@ let is_prime n =
 		int_of_float 
 		(Float.floor 
 		(Float.sqrt 
-		(float_of_int n)))
-	and range a b = 
+		(float_of_int n))) in
+	let rec range a b = 
 		if a <= b then a :: range (a + 1) b 
 		else [] in
 	if n = 1 then false 
