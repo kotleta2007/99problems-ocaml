@@ -17,7 +17,8 @@ let all_primes a b =
 	List.filter is_prime l;;
 
 let goldbach n =
-	let primes = all_primes 2 n in
+	if n mod 2 = 1 || n < 4 then (-1, -1)
+	else let primes = all_primes 2 n in
 	let rec iter l = 
 		match l with
 		| [] -> (-1, -1)
